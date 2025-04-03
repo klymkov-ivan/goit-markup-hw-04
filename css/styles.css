@@ -109,8 +109,8 @@ button {
   background-color: #404bbf;
 }
 
-.nav-menu .nav-list-item .nav-menu-item:active,
-.nav-menu .nav-list-item .nav-menu-item:focus {
+.nav-menu-item:active,
+.nav-menu-item:focus {
   color: #404bbf;
 }
 
