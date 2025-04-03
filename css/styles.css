@@ -215,6 +215,8 @@ button {
   display: flex;
   background-color: #f4f4fd;
   margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons-list {
