@@ -97,7 +97,7 @@ button {
   color: #404bbf;
 }
 
-.nav-menu-item:hover::after {
+.nav-menu-item::after {
   display: block;
   position: absolute;
   bottom: 0;
