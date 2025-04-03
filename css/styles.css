@@ -83,10 +83,24 @@ button {
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 24px;
+  position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-menu .nav-menu-item:hover {
   color: #404bbf;
+}
+
+.nav-menu-item:hover::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
 }
 
 .nav-menu .nav-studio .nav-menu-item:active,
@@ -113,6 +127,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list .contact:hover,
@@ -131,6 +146,7 @@ button {
   background-size: cover;
   background-position: center;
   padding: 188px 0;
+  max-width: 1440рх;
 }
 
 .hero-phrase {
@@ -163,6 +179,7 @@ button {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-btn:hover,
@@ -211,6 +228,7 @@ button {
   border-radius: 50%;
   background-color: #4d5ae5;
   display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ellipse:hover {
@@ -312,6 +330,35 @@ button {
 
 .portfolio-item {
   flex-shrink: 0;
+}
+
+.parent-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px 164px 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+
+.parent-overlay:hover .overlay {
+  transform: translateY(0);
 }
 
 .portfolio-item .project-name {
