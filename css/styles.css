@@ -336,7 +336,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .team-member {
@@ -476,6 +476,12 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.footer-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer-ellipse:hover,
