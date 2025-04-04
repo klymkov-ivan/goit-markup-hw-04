@@ -444,7 +444,7 @@ button {
 }
 
 .motivation-phrase {
-  font-weight: 400;
+   font-weight: 500
   font-size: 16px;
 
   /* line-height: 24px; */
@@ -476,6 +476,7 @@ button {
   margin: 0 auto;
 }
 
-.footer-ellipse:hover {
+.footer-ellipse:hover,
+.footer-ellipse:focus {
   background-color: #31d0aa;
 }
