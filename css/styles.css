@@ -99,7 +99,7 @@ button {
   color: #404bbf;
 }
 
-.nav-menu-item::after {
+.studio::after {
   display: block;
   position: absolute;
   bottom: -1px;
@@ -170,8 +170,8 @@ button {
   text-align: center;
   color: #fff;
   max-width: 496px;
-  padding-bottom: 48px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .order-btn {
