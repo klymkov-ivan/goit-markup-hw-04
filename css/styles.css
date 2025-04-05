@@ -488,3 +488,25 @@ button {
 .footer-ellipse:focus {
   background-color: #31d0aa;
 }
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.modal-window {
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
